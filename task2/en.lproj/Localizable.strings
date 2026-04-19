@@ -1,0 +1,11 @@
+/* City names */
+"Tbilisi" = "Tbilisi";
+"Batumi"  = "Batumi";
+"Paris"   = "Paris";
+"Lyon"    = "Lyon";
+
+/* Museum names */
+"museum_tbilisi_name" = "National Museum of Georgia";
+"museum_batumi_name"  = "Batumi Archaeological Museum";
+"museum_paris_name"   = "The Louvre";
+"museum_lyon_name"    = "Musée des Confluences";
