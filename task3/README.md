@@ -1,29 +1,44 @@
-# Task 3 – BMR & BMI Calculator
+## Название проекта
 
-**Author:** Ivan Nasennik, Group 12b  
-**Language:** Swift 5 + UIKit
+Задание 3. Калькулятор BMR и BMI.
 
-## Description
+## Описание
 
-Calculates the Body Mass Index (BMI) and Basal Metabolic Rate (BMR) using the Harris-Benedict formula, then shows total daily energy expenditure based on the selected activity level.
+Приложение на Swift и UIKit вычисляет:
 
-### Formulas
+- индекс массы тела `BMI`;
+- базовый обмен веществ `BMR` по формуле Харриса-Бенедикта;
+- суточную норму калорий с учётом уровня активности.
 
-**BMI** = weight (kg) / height (m)²
+### Формулы
 
-**BMR (male)** = 88.362 + 13.397×weight + 4.799×height − 5.677×age
+**BMI** = вес (кг) / рост (м)²
 
-**BMR (female)** = 447.593 + 9.247×weight + 3.098×height − 4.330×age
+**BMR (мужчины)** = 88.362 + 13.397×вес + 4.799×рост − 5.677×возраст
 
-**TDEE** = BMR × activity multiplier (1.2 / 1.375 / 1.55 / 1.725 / 1.9)
+**BMR (женщины)** = 447.593 + 9.247×вес + 3.098×рост − 4.330×возраст
 
-## Installation
+**TDEE** = BMR × коэффициент активности  
+`1.2 / 1.375 / 1.55 / 1.725 / 1.9`
 
-1. Create a new Xcode project (App, Swift, Storyboard).
-2. Copy `ViewController.swift` into the project.
-3. In `Main.storyboard` add 3 `UITextField`s, 2 `UISegmentedControl`s, a `UIButton`, and a `UILabel` (lines = 4).
-4. Connect outlets and action (`calculateTapped`).
+## Установка
 
-## Authors
+1. Создать новый проект Xcode типа `App`, язык `Swift`, интерфейс `Storyboard`.
+2. Скопировать `ViewController.swift` в проект.
+3. В `Main.storyboard` добавить 3 `UITextField`, 2 `UISegmentedControl`,
+   `UIButton` и `UILabel` с несколькими строками.
+4. Связать `IBOutlet` и `IBAction` (`calculateTapped`).
+
+## Использование
+
+Ввести возраст, рост и вес, выбрать пол и уровень активности, затем нажать
+кнопку расчёта.
+
+## Авторы
 
 Ivan Nasennik — Group 12b
+
+## Ссылки и дополнительные сведения
+
+- Основной файл: `task3/ViewController.swift`
+- В коде добавлены аннотации `MARK`
