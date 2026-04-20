@@ -1,25 +1,35 @@
-# Task 1 – Background Switcher
+## Название проекта
 
-**Author:** Ivan Nasennik, Group 12b
+Задание 1. Переключение фонового изображения.
 
-## Description
+## Описание
 
-iOS app with a UISwitch that changes the view background between two images.  
-- **ON** → bg1.jpg  
-- **OFF** → bg2.jpg
+iOS-приложение на Swift с `UISwitch`, который меняет фон между двумя
+изображениями:
 
-## Installation
+- положение **ON** — `bg1.jpg`;
+- положение **OFF** — `bg2.jpg`.
 
-1. Create a new Xcode project (App, Swift, Storyboard).
-2. Copy `ViewController.swift` into the project.
-3. Open `Main.storyboard`, add a `UISwitch` and a `UILabel`.
-4. Connect them: `backgroundSwitch` (Outlet), `switchIndicator` (Outlet), `backgroundSwitchTapped` (Action).
-5. Add `bg1` and `bg2` image sets to `Assets.xcassets`.
+## Установка
 
-## Usage
+1. Создать новый проект Xcode типа `App`, язык `Swift`, интерфейс `Storyboard`.
+2. Скопировать `ViewController.swift` в проект.
+3. Открыть `Main.storyboard`, добавить `UISwitch` и `UILabel`.
+4. Связать элементы:
+   `backgroundSwitch` — `IBOutlet`,
+   `switchIndicator` — `IBOutlet`,
+   `backgroundSwitchTapped` — `IBAction`.
+5. Добавить изображения `bg1` и `bg2` в `Assets.xcassets`.
 
-Run the app, toggle the switch to change the background.
+## Использование
 
-## Authors
+Запустить приложение и переключать `UISwitch` для смены фонового изображения.
+
+## Авторы
 
 Ivan Nasennik — Group 12b
+
+## Ссылки и дополнительные сведения
+
+- Исходный файл контроллера: `task1/ViewController.swift`
+- В коде использованы аннотации `MARK`, `TODO` и `FIXME`
