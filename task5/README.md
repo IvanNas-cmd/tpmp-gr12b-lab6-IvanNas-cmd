@@ -1,43 +1,54 @@
-# Task 5 – Discount Calculator (Variant 17)
+## Название проекта
 
-**Author:** Ivan Nasennik, Group 12b  
-**Language:** Swift 5 + SwiftUI
+Задание 5. Калькулятор скидок, вариант 17.
 
-## Description
+## Описание
 
-Two-screen SwiftUI app that calculates a purchase discount.
+Двухэкранное приложение на SwiftUI для расчёта скидки на покупку.
 
-### Discount rules (Variant 17)
+### Правила скидок для варианта 17
 
-**By Quantity**
-| Items | Discount |
+**По количеству товаров**
+
+| Количество | Скидка |
 |---|---|
 | < 10 | 0% |
 | ≥ 10 | 1% |
 | ≥ 20 | 3% |
 
-**By Cost**
-| Cost | Discount |
+**По стоимости покупки**
+
+| Стоимость | Скидка |
 |---|---|
 | ≤ 50 | 0% |
-| > 50 and ≤ 100 | 3% |
+| > 50 и ≤ 100 | 3% |
 | > 100 | 5% |
 
-## Localization
+## Локализация
 
-Supported: **English**, **Russian**, **Belarusian**.
+Поддерживаются языки:
 
-## Layout
+- английский;
+- русский;
+- белорусский.
 
-Adaptive for portrait & landscape orientations and all iPhone/iPad screen sizes via SwiftUI's native layout system.
+## Установка
 
-## Installation
+1. Создать новый проект Xcode типа `App`, язык `Swift`, интерфейс `SwiftUI`.
+2. Заменить `ContentView.swift` файлом из этой папки.
+3. Скопировать три файла `*.lproj/Localizable.strings` и включить локали в проекте.
+4. Запустить приложение через `Cmd+R`.
 
-1. Create a new Xcode project (App, Swift, **SwiftUI** interface).
-2. Replace `ContentView.swift` with the file from this branch.
-3. Copy the three `*.lproj/Localizable.strings` files; enable the three locales in project settings.
-4. Run with Cmd+R.
+## Использование
 
-## Authors
+Выбрать тип скидки через `segmented control`, ввести стоимость и количество
+товаров, затем выполнить расчёт.
+
+## Авторы
 
 Ivan Nasennik — Group 12b
+
+## Ссылки и дополнительные сведения
+
+- Адаптируется под книжную и альбомную ориентацию средствами SwiftUI
+- Исходный файл интерфейса: `task5/ContentView.swift`

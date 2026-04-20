@@ -1,23 +1,33 @@
-# Task 4 – SwiftUI Getting Started
+## Название проекта
 
-**Author:** Ivan Nasennik, Group 12b  
-**Language:** Swift 5 + SwiftUI
+Задание 4. SwiftUI: стартовое приложение.
 
-## Description
+## Описание
 
-A simple two-screen SwiftUI app demonstrating:
-- `NavigationView` and `NavigationLink`
-- Custom reusable `RatingView` component
-- `@State` and `@Binding`
-- Dark-mode support via `preferredColorScheme`
+Небольшое двухэкранное приложение на SwiftUI, демонстрирующее:
 
-## Installation
+- `NavigationView` и `NavigationLink`;
+- переиспользуемый компонент `RatingView`;
+- использование `@State` и `@Binding`;
+- поддержку тёмной темы через `preferredColorScheme`.
 
-1. Create a new Xcode project (App, Swift, **SwiftUI** interface).
-2. Replace the generated `ContentView.swift` with `ContentView.swift` from this branch.
-3. In `@main App` struct set `WelcomeView()` as the root view.
-4. Run with Cmd+R.
+## Установка
 
-## Authors
+1. Создать новый проект Xcode типа `App`, язык `Swift`, интерфейс `SwiftUI`.
+2. Заменить сгенерированный `ContentView.swift` файлом из этой папки.
+3. В структуре `@main App` указать `WelcomeView()` как корневой экран.
+4. Запустить приложение через `Cmd+R`.
+
+## Использование
+
+На первом экране можно поставить рейтинг и перейти на второй экран через
+навигационную ссылку.
+
+## Авторы
 
 Ivan Nasennik — Group 12b
+
+## Ссылки и дополнительные сведения
+
+- Исходный файл: `task4/ContentView.swift`
+- Основано на примере `SwiftUI: Getting Started`
