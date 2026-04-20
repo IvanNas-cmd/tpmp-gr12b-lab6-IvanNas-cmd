@@ -1,0 +1,14 @@
+"By Quantity"                         = "По количеству";
+"By Cost"                             = "По стоимости";
+"Discount Type"                       = "Тип скидки";
+"Input Data"                          = "Ввод данных";
+"Cost of Items"                       = "Стоимость товаров (руб)";
+"Quantity of Items"                   = "Количество товаров";
+"Calculate"                           = "Рассчитать";
+"Result"                              = "Результат";
+"Discount"                            = "Скидка";
+"Discount Amount"                     = "Сумма скидки";
+"Final Cost"                          = "Итоговая стоимость";
+"Discount Calculator"                 = "Калькулятор скидки";
+"Invalid Input"                       = "Ошибка ввода";
+"Please enter valid positive numbers." = "Введите корректные положительные числа.";
