@@ -1,35 +1,49 @@
-# Task 2 – Weather & Museum Viewer (Variant 17)
+## Название проекта
 
-**Author:** Ivan Nasennik, Group 12b  
-**Language:** Objective-C
+Задание 2. Просмотр погоды и музеев для варианта 17.
 
-## Description
+## Описание
 
-Displays weather (temperature with colour) and a famous museum for cities in Georgia and France.
+Приложение на Objective-C показывает температуру с цветовым индикатором и
+известный музей для выбранного города из Грузии или Франции.
 
-### Cities
-| City | Country | Temp | Museum |
+### Города
+
+| Город | Страна | Температура | Музей |
 |---|---|---|---|
-| Tbilisi | Georgia | 25°C 🔴 | National Museum of Georgia |
-| Batumi  | Georgia | 22°C 🔴 | Batumi Archaeological Museum |
-| Paris   | France  | 15°C 🔵 | The Louvre |
-| Lyon    | France  | 18°C 🔵 | Musée des Confluences |
+| Tbilisi | Georgia | 25°C | National Museum of Georgia |
+| Batumi | Georgia | 22°C | Batumi Archaeological Museum |
+| Paris | France | 15°C | The Louvre |
+| Lyon | France | 18°C | Musée des Confluences |
 
-Colour rule: **red** if temp > 20°C, **blue** otherwise.
+Правило цвета:
 
-## Localization
+- красный, если температура выше `20°C`;
+- синий, если температура `20°C` и ниже.
 
-Supported: English, Russian, Belarusian.
+## Установка
 
-## Installation
+1. Создать новый проект Xcode типа `App`, язык `Objective-C`, интерфейс `Storyboard`.
+2. Скопировать `ViewController.h` и `ViewController.m` в проект.
+3. Скопировать файлы `*.lproj/Localizable.strings` и включить три локали в
+   настройках проекта.
+4. В `Main.storyboard` добавить `UISegmentedControl`, два `UILabel`,
+   `UIImageView` и `UIButton`.
+5. Связать `IBOutlet` и `IBAction` с `ViewController`.
+6. Добавить изображения музеев в `Assets.xcassets` с именами
+   `museum_tbilisi`, `museum_batumi`, `museum_paris`, `museum_lyon`.
 
-1. Create a new Xcode project (App, Objective-C, Storyboard).
-2. Copy `ViewController.h` and `ViewController.m` into the project.
-3. Copy `*.lproj/Localizable.strings` files; enable the three locales in project settings.
-4. In `Main.storyboard` add a `UISegmentedControl`, two `UILabel`s, a `UIImageView`, and a `UIButton`.
-5. Connect outlets and actions to `ViewController`.
-6. Add museum images to `Assets.xcassets` (names: `museum_tbilisi`, `museum_batumi`, `museum_paris`, `museum_lyon`).
+## Использование
 
-## Authors
+Выбрать город через `UISegmentedControl` или нажать кнопку обновления, чтобы
+переключиться к следующему городу и обновить температуру, название музея и
+изображение.
+
+## Авторы
 
 Ivan Nasennik — Group 12b
+
+## Ссылки и дополнительные сведения
+
+- Поддерживаемые языки: английский, русский, белорусский
+- Основная логика находится в `task2/ViewController.m`
